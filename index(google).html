@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin:0;
+             padding:0;
+             box-sizing:border-box;
+             font-family: Arial, Helvetica, sans-serif;
+        margin-left:100px
+        }
+        section{
+            position:relative;
+            width:100%;
+            display:flex;justify-content: center;
+            align-items:center;
+            min-height:100vh;
+        }
+        section header{
+            position: absolute;
+            width:100%;
+           top:0;justify-content:flex-end;
+           padding:20px;display:flex;
+
+        }
+        section header ul{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        section header ul  li{
+            list-style:none;
+           margin-left:20px;color:black
+        }
+        section header ul  li a{
+            text-decoration: none;color:black;
+            font-size:13px
+        }
+        section header ul  li button{
+            background-color: rgb(66, 66, 208);
+            border:1px solid black; outline:none;color:white;
+         font-weight:bold;border-radius: 5px;font-size:14px;cursor:pointer;
+        }
+     .main{
+        width:500px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+     .searchbox{
+        position:relative;
+        width:100%;
+        margin-top:20px
+
+      }
+    .search{
+        width:100%;
+        padding:10px;
+        padding-left:45px;
+        padding-right: 0px;
+        border-radius:30px;
+        border:1px solid #e2e2e2fa;
+        
+        font-size:12px
+    }
+    .icons{position:absolute;
+        top:0;width:100%;display:flex;padding:07px 15px;justify-content: space-between;pointer-events: none;align-items: center;
+
+    }
+    .buttons button{
+        margin-top:20px;border:1px solid whitesmoke; background-color: whitesmoke;
+    }
+    .lang{
+        margin-top:10px; font-size: 14px;border-radius:1px solid whitesmoke
+    }
+    .buttons button:hover{
+        border:1px solid black
+    }
+    .footer{
+         position:absolute;
+         bottom:0;
+         left:-20px;
+         width:100%;font-size:15px;
+    }
+  .row{
+    display:flex;
+    justify-content:space-between;
+ border-top:1px solid rgba(248, 248, 248, 0.96);
+  }
+  .row ul{
+    display:flex
+  }
+  .row ul li{
+    list-style:none;margin-left:-10px ;
+  }
+  .row ul li a{list-style:none; text-decoration: none;color:rgb(124, 126, 128);margin-right: 20px;font-size:14px
+
+  }
+  @media(min-width:768px) and (max-width:1023px)/*mobile view*/
+  @media(
+    max-width:1000px
+  ){
+    .search{width:78%;
+    }
+    .icons{width:83%}
+    .footer{left:-53px}
+    .row ul{
+    display:block
+  }
+  body{margin-left:49px}
+
+
+  }
+  /*desktop*/
+@media(min-width:1024px){}
+    </style>
+    <title>Google</title>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li>
+              <a href="#">Gmail</a>    </li> 
+              <li><a href="#"> Images</a>   </li>
+              <li><a href="#"><img src="bars.png" alt=""></a>    
+                </li>
+                <li><button></button></li>
+               
+            </ul>
+        </header>
+    <div class="main">
+        <img src="google.png" alt="Google">
+   
+    <div class="searchbox">
+        <input type="text" class="search" placeholder="Search Google or type a URL">
+        <div class="icons">
+            <div><img src="search.png" ></div>
+            <div><img src="mic.png" >
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button>Google search</button>
+        <button>I'm feeling lucky </button>
+    </div>
+    <div class="lang">Google offered in : <a href="#">Bangla</a></div>
+    </div>
+   <div class="footer">
+    <div class="row">
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">How search works</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+   </div>
+
+    </section>
+</body>
+</html>
